@@ -17,4 +17,5 @@ struct Input: Identifiable {
     let star: Int
     let description: String?
     let url: String
+    
 }

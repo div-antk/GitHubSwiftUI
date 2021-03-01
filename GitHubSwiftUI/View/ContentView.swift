@@ -10,11 +10,18 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var text = ""
+    @State private var cardViewInputs = [Input]()
     
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
-                //
+                ForEach(cardViewInputs) { input in
+                    Button(action: {
+                        
+                    }) {
+                        CardView(input: input)
+                    }
+                }
             }
         }
         .padding()

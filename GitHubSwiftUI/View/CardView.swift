@@ -16,7 +16,7 @@ struct CardView: View {
     }
 
     var body: some View {
-        VStack(alignment: .center) {
+        VStack(alignment: .leading) {
             
             Image(uiImage: input.iconImage)
                 // Buttonで包む際に色が変わらないようにする
